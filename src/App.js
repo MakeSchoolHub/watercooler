@@ -1,9 +1,3 @@
-if (process.env.NODE_ENV !== 'production') {
-  //// .env files shouldn't be used in production
-  // load .env file
-  require('dotenv').config();
-}
-
 import React from 'react';
 import './App.css';
 import {
@@ -18,9 +12,16 @@ import RoomList from './components/RoomList';
 import AddRoom from './components/AddRoom';
 import ChatRoom from './components/ChatRoom';
 
+
+if (process.env.NODE_ENV !== 'production') {
+  //// .env files shouldn't be used in production
+  // load .env file
+  require('dotenv').config();
+}
+
 function SecureRoute({ children, ...rest }) {
   /* Filter visitors by logged-in users.
-   * Redirect if not logged-in 
+   * Redirect if not logged-in
    */
   return (
     <Route
