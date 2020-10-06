@@ -8,6 +8,7 @@
   },
   "hosting": {
     "public": "public",
+    "site": "whotoldyouthat",
     "ignore": [
       "firebase.json",
       "**/.*",
