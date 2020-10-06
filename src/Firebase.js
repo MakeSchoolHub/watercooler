@@ -1,3 +1,7 @@
+/* Acknoledgements:
+ * Abhi, Ashab, Franklin, Muhammad
+ * This tutorial: https://tinyurl.com/y6x4n8s3
+ */
 import * as firebase from 'firebase';
 import firestore from 'firebase/firestore'
 

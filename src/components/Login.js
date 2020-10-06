@@ -1,3 +1,7 @@
+/* Acknoledgements:
+ * Abhi, Ashab, Franklin, Muhammad
+ * This tutorial: https://tinyurl.com/y6x4n8s3
+ */
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import {
@@ -10,12 +14,12 @@ import {
     Input
 } from 'reactstrap';
 import firebase from '../Firebase';
+import * as firebaseui from 'firebaseui'
 
 function Login() {
   /* A component containing a form for inputing username. After submitting
    * the form to the Firebase Realtime-Database, if the submitted username
    * isn't found, it is added.
-   * adapted from https://tinyurl.com/y6x4n8s3
    */
   const history = useHistory();
   // Required form field
@@ -47,6 +51,7 @@ function Login() {
         }
     });
   };
+  var provider = new firebase.auth.GoogleAuthProvider();
   // Render the login page with a loading spinng and a form for submitted
   // visitor's nickname.
   return (

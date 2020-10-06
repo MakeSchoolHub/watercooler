@@ -1,3 +1,7 @@
+/* Acknoledgements:
+ * Abhi, Ashab, Franklin, Muhammad
+ * This tutorial: https://tinyurl.com/y6x4n8s3
+ */
 import React from 'react';
 import './App.css';
 import {
@@ -22,7 +26,6 @@ if (process.env.NODE_ENV !== 'production') {
 function SecureRoute({ children, ...rest }) {
   /* Filter visitors by logged-in users.
    * Redirect if not logged-in
-   * adapted from https://tinyurl.com/y6x4n8s3
    */
   return (
     <Route

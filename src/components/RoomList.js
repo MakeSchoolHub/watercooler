@@ -1,4 +1,7 @@
-// credit goes to https://tinyurl.com/y6x4n8s3
+/* Acknoledgements:
+ * Abhi, Ashab, Franklin, Muhammad
+ * This tutorial: https://tinyurl.com/y6x4n8s3
+ */
 import React, { useState, useEffect } from 'react';
 import {
     Link,
@@ -15,8 +18,7 @@ import Moment from 'moment';
 import firebase from '../Firebase';
 
 function RoomList() {
-  /*
-   * adapted from https://tinyurl.com/y6x4n8s3
+  /* A component for show a list of available rooms to join.
    */
    const [room, setRoom] = useState([]);
    // trigger load spinner
