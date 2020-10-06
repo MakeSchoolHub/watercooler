@@ -1,3 +1,9 @@
+if (process.env.NODE_ENV !== 'production') {
+  //// .env files shouldn't be used in production
+  // load .env file
+  require('dotenv').config();
+}
+
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
