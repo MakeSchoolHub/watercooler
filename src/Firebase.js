@@ -4,9 +4,9 @@ import firestore from 'firebase/firestore'
 const settings = {timestampsInSnapshots: true};
 
 const config = {
-    projectId: 'YOUR_FIREBASE_PROJECT_ID',
-    apiKey: 'YOUR_API_KEY',
-    databaseURL: 'YOUR_DATABASE_URL'
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    apiKey: process.env.FIREBASE_API_KEY,
+    databaseURL: process.env.FIREBASE_DATABASE_URL
   };
 firebase.initializeApp(config);
 
