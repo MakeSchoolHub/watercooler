@@ -22,6 +22,7 @@ if (process.env.NODE_ENV !== 'production') {
 function SecureRoute({ children, ...rest }) {
   /* Filter visitors by logged-in users.
    * Redirect if not logged-in
+   * adapted from https://tinyurl.com/y6x4n8s3
    */
   return (
     <Route

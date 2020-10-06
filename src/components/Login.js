@@ -15,6 +15,7 @@ function Login() {
   /* A component containing a form for inputing username. After submitting
    * the form to the Firebase Realtime-Database, if the submitted username
    * isn't found, it is added.
+   * adapted from https://tinyurl.com/y6x4n8s3
    */
   const history = useHistory();
   // Required form field
